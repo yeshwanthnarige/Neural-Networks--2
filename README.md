@@ -43,3 +43,12 @@ Example: Expanding a distributed training system across multiple GPUs or cloud i
 ✅ Supports Nvidia GPUs and FPGAs for deep learning.
 ✅ Provides MLOps, CI/CD integration, and AutoML.
 ✅ Best for users within the Microsoft ecosystem (Azure, Power BI, Synapse).
+
+Question 3: CNN Feature Extraction with Filters and Pooling (30 points)
+Task 1: Implement Edge Detection Using Convolution (15 points)
+Explanation:
+•	Loads a grayscale image. \
+•	Defines the Sobel filters for detecting edges in the x and y directions. \
+•	Applies convolution using cv2.filter2D(). \
+Displays the original and filtered images using matplotlib \
+
