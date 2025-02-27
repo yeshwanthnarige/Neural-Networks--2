@@ -52,3 +52,46 @@ Explanation:
 •	Applies convolution using cv2.filter2D(). \
 Displays the original and filtered images using matplotlib \
 
+Task 2: Implement Max Pooling and Average Pooling (15 points)
+Explanation: \
+1.	Generates a random 4×4 matrix with values between 0 and 9. \
+2.	Uses MaxPooling2D for max pooling and AveragePooling2D for average pooling. \
+3.	Strides = 2, Pool size = 2×2, meaning the pooled output will be 2×2. \
+4.	Prints the original, max-pooled, and average-pooled matrices. \
+
+Question 4: Implementing and Comparing CNN Architectures (30 points)
+Task 1: Implement AlexNet Architecture (15 points)
+Explanation:
+1.	First Convolutional Layer:
+o	96 filters, (11×11) kernel, stride 4, ReLU activation
+o	Followed by MaxPooling (3×3) with stride 2
+2.	Second Convolutional Layer:
+o	256 filters, (5×5) kernel, ReLU activation
+o	MaxPooling (3×3) with stride 2
+3.	Third, Fourth, and Fifth Convolutional Layers:
+o	384, 384, and 256 filters with (3×3) kernel, ReLU activation
+o	MaxPooling (3×3) with stride 2 after the fifth layer
+4.	Flatten layer to convert feature maps to a 1D vector
+5.	Two Fully Connected (Dense) Layers:
+o	4096 neurons each, ReLU activation, Dropout (50%)
+6.	Output Layer:
+o	10 neurons, softmax activation for classification
+Output:
+After running the script, you’ll see the model summary showing layer details, output shapes, and parameter counts.
+
+Task 2: Implement a Residual Block and ResNet (15 points)
+Step 1: Implement Residual Block
+•	Takes an input tensor.
+•	Applies two Conv2D layers (each with 64 filters, (3×3) kernel, ReLU activation).
+•	Includes a skip connection (adds input to output before activation).
+🔹 Step 2: Build a Simple ResNet-like Model
+•	Initial Conv2D layer (64 filters, (7×7) kernel, stride 2).
+•	Apply two residual blocks.
+•	End with a Flatten layer, Dense layer (128 neurons), and Output layer (Softmax)
+Output: The script will print the model summary for the ResNet-like model, showing:
+•	Layers: Conv2D, Residual Blocks, Flatten, Dense.
+•	Parameters for each layer.
+
+
+
+
